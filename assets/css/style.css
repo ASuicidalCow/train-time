@@ -1,0 +1,15 @@
+.panel-heading{
+    border: 2px solid rgb(55,178,235);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    background-color: rgb(55, 178, 235);
+    color: white;
+}
+.panel{
+    border: 2px solid rgb(71, 154, 192);
+    margin-bottom: 15px;
+    
+}
+.table{
+    margin-bottom: 0px;
+}
