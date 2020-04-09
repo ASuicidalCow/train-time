@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train-Time</title>
+
+    <!--bootstrap-->
+    ]
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--css style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
+      <div class="container">
+        <h1 class="display-4">Where is the train at?</h1>
+        <p class="lead">When is the next train coming?</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel panel-primary  ">
+        <div class="panel-heading">Current Train Schedule</div>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th> Train Name</th>
+              <th> Destination</th>
+              <th> Frequency(min)</th>
+              <th> Next Arrival</th>
+              <th> Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-primary  ">
+            <div class="panel-heading">Add Train</div>
+      <form>
+          <br>
+        <div class="form-group">
+          <label for="FormControlTextarea1">Train Name</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="1"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="FormControlTextarea2">Destination</label>
+          <textarea
+            class="form-control"
+            id="FormControlTextarea2"
+            rows="1"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="FormControlTextarea3">First Train Time (HH:mm/Military time)</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea3"
+            rows="1"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea4">frequency (min)</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea4"
+            rows="1"
+          ></textarea>
+        </div>
+      </form>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <!--  javascript-->
+    <script src="assets/javascript/logic.js"></script>
+  </body>
+</html>
